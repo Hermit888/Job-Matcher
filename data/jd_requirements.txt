@@ -1,0 +1,14 @@
+Experience building and maintaining production software systems.
+Strong programming skills in at least one language such as Python, Java, or C++.
+Experience designing and implementing RESTful APIs and backend services.
+Familiarity with databases and writing efficient SQL queries.
+Knowledge of data structures, algorithms, and complexity tradeoffs.
+Experience with Git-based workflows and collaborative development.
+Understanding of software testing practices such as unit tests and integration tests.
+Familiarity with cloud platforms such as AWS, GCP, or Azure.
+Experience containerizing applications with Docker and deploying services.
+Exposure to distributed systems concepts such as scalability, reliability, and observability.
+Ability to debug performance issues and improve system efficiency.
+Good communication skills and ability to work with cross-functional teams.
+For ML roles, experience building or deploying machine learning models is a plus.
+For NLP roles, familiarity with embeddings and transformer-based models is a plus.

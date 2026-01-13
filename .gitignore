@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Conda / venv
+env/
+venv/
+.venv/
+job-matcher-env/
+
+# PyCharm
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: private resume
+# data/sample_resume.txt

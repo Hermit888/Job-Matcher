@@ -1,0 +1,44 @@
+Python
+Java
+C++
+JavaScript
+TypeScript
+SQL
+Git
+Linux
+REST API
+GraphQL
+Microservices
+Docker
+Kubernetes
+AWS
+GCP
+Azure
+CI/CD
+Unit Testing
+PyTest
+Data Structures
+Algorithms
+System Design
+Distributed Systems
+PostgreSQL
+MySQL
+MongoDB
+Redis
+Kafka
+Spark
+Airflow
+Machine Learning
+Deep Learning
+NLP
+Transformers
+PyTorch
+TensorFlow
+Scikit-learn
+Pandas
+NumPy
+ETL
+Data Pipelines
+A/B Testing
+Communication
+Cross-functional Collaboration
