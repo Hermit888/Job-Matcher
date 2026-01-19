@@ -39,6 +39,7 @@ def split_resume_into_sentences(text: str) -> List[str]:
     """
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = text.replace("•", "\n").replace("·", "\n").replace("◦", "\n")
+    text = text.replace("", "\n")
 
     raw_lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
     sentences = []
@@ -102,6 +103,9 @@ def is_likely_section_header(text: str) -> bool:
         return False
 
     if text and text[-1] in '.!?;,':
+        return False
+
+    if ',' in text:
         return False
 
     # Check for ALL CAPS format

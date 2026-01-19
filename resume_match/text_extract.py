@@ -77,6 +77,14 @@ def _read_docx(path: str) -> str:
     full_text = "\n".join(parts)
     return _postprocess_text(full_text)
 
+def _looks_like_field_line(s: str) -> bool:
+    """
+    Detect lines like 'Field: value' (e.g. 'Tools: Python, Git')
+    Used to prevent incorrect PDF line merging.
+    """
+    s = s.strip()
+    return re.match(r'^[A-Za-z][A-Za-z &/\-]{0,25}:\s+\S+', s) is not None
+
 
 def _clean_pdf_artifacts(text: str) -> str:
     """
@@ -109,8 +117,11 @@ def _clean_pdf_artifacts(text: str) -> str:
         if i + 1 < len(lines):
             next_line = lines[i + 1].strip()
 
+            # ❗ NEW: Don't merge if either line looks like a "Field: value" list line
+            if _looks_like_field_line(current_line) or _looks_like_field_line(next_line):
+                should_merge = False
             # Don't merge if current line ends with strong punctuation
-            if current_line and current_line[-1] in '.!?:':
+            elif current_line and current_line[-1] in '.!?:':
                 should_merge = False
             # Don't merge if next line is empty (paragraph break)
             elif not next_line:
@@ -232,10 +243,26 @@ def extract_text(path: str) -> Tuple[str, str]:
         return _read_txt(path), "txt"
     elif ext == ".docx":
         return _read_docx(path), "docx"
+    elif ext == ".doc":
+        # Try to read legacy .doc with python-docx
+        try:
+            text = _read_docx(path)
+            return text, "doc"
+        except Exception as e:
+            raise ValueError(
+                f"Cannot read legacy .doc file.\n"
+                f"Error: {str(e)}\n\n"
+                "Please convert to .docx format:\n"
+                "  1. Open in Microsoft Word\n"
+                "  2. File → Save As → Choose '.docx' format\n"
+                "  3. Or use online converter:\n"
+                "     https://www.zamzar.com/convert/doc-to-docx/"
+            )
     elif ext == ".pdf":
         return _read_pdf(path), "pdf"
+
     else:
         raise ValueError(
             f"Unsupported file type: {ext}\n"
-            f"Supported formats: .txt, .docx, .pdf"
+            f"Supported formats: .txt, .docx, .doc (limited), .pdf"
         )
