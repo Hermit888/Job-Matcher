@@ -1,0 +1,43 @@
+RUI ZHANG
+Los Angeles, CA, 90014 | 6692883007 | rayzhang418@gmail.com | www.linkedin.com/in/rayzhangcscn
+
+EDUCATION
+University of Southern California	Los Angeles, CA
+Master of Science in Computer Science (Artificial Intelligence)	August 2025-Present
+? GPA: 3.6 / 4.0                                                                                                                                                   Expected Graduation: June 2027
+ 
+San Jose State University	San Jose, CA
+Bachelor of Science in Computer Science	August 2021-August 2025
+? GPA: 3.5 / 4.0
+ 
+EXPERIENCE
+Xiaohongshu (Little Red Book)	Wuhan, Hubei, China
+AI Model Operations Intern, AI Data Services	June 2023-August 2023
+? Engineered and optimized Labelme, an open-source AI data labeling tool, reducing review delays and boosting team efficiency by 40%
+? Designed and implemented an AI data acceptance workflow to validate labeled data quality, enhancing review accuracy by 40% and reducing data errors
+? Customized open-source data visualization platforms for internal analytics, enabling 20+ employees to generate insights, decreased reporting time by 30%
+ 
+Tripalink Corp	Los Angeles, California
+Software Engineer Intern	June 2022-August 2022
+? Developed and implemented 5+ key modules for a real estate operational website, including contract issuance, property viewing, payments, reservations, and tenant service requests
+? Built and deployed an automated Python web scraper for Facebook Groups, extracting property listings and potential customer data, improved marketing lead generation efficiency by 90%
+ 
+SJSU Housing Department	San Jose, California
+IT Student Assistance	August 2023-November 2023
+? Provided technical support to staff by troubleshooting hardware, software, and system access issues, supporting daily operations for 20+ users and enhancing overall task efficiency
+? Managed dormitory check-in equipment, overseeing maintenance, upgrades, and inventory for 100+ devices, ensuring reliable functionality and improving resident check-in efficiency
+? Maintained up-to-date web information, ensuring accuracy and relevance, demonstrating proficiency in web content management systems
+ 
+SJSU International Student and Scholar Services (ISSS)	San Jose, California
+Global Leader - Student Assistant	May 2024-August 2025
+? Organized 4 large-scale events (200+ participants each) engaging students from multiple cultural backgrounds, strengthening cross-cultural exchange and campus diversity
+? Conducted 10+ cultural adaptation workshops (?30 participants each) engaging international students, domestic peers, and faculty/staff to promote cross-cultural understanding
+ 
+SKILLS
+Core CS: Data Structures & Algorithms, Operating Systems, Computer Networks, Databases
+Programming: Python, Java, C++, SQL, JavaScript
+ML / AI: Machine Learning fundamentals, Model training & evaluation, Data preprocessing, Basic deep learning concepts(PyTorch)
+Engineering: RESTful API design, HTTP/ JSON, System design, Debugging & testing, Git version control
+Tools: MySQL, Git, Postman, Docker, React, VS Code, PyCharm, NumPy, Pandas
+Cloud: AWS(basic), Google Cloud Platform(GCP - basic)
+Soft Skills: Leadership, Cross-cultural Communication, Strategic Planning, Time Management, Team Collaboration, Open-minded
