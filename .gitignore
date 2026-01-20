@@ -1,6 +1,7 @@
 # Python cache
 __pycache__/
 *.py[cod]
+__init__.py
 
 # Conda / venv
 env/
