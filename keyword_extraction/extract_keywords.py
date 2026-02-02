@@ -4,9 +4,10 @@ from keybert import KeyBERT
 """
 summary based on the test cases: 
 1. all-mpnet-base-v2 looks perform better. It may be because it is more vector-dense.
-2. contents only. don't include section headers like "What We Look For In You", "Nice To Haves", etc.
-3. maybe only top_n=3. 5 is too easily get irrelevant ones.
-4. oervall looks having less powerful keywords than other sections.
+2. also tested other sentence transformer modelsbut they requires fixed input format.
+3. contents only. don't include section headers like "What We Look For In You", "Nice To Haves", etc.
+4. maybe only top_n=3. 5 is too easily get irrelevant ones.
+5. oervall looks having less powerful keywords than other sections.
 """
 
 # different sections in a job description
